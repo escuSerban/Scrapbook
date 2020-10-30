@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="2dp"
+    app:contentPadding="4dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/colorWhite">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/papayaWhip">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/card_imageView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/rosyBrown"
+            android:src="@drawable/ic_insert_photo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:orientation="vertical"
+        android:layout_toEndOf="@id/card_imageView">
+
+        <TextView
+            android:id="@+id/title_section"
+            style="@style/SectionNameStyle"
+            android:text="@string/title_field"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/category_section"
+            style="@style/SectionNameStyle"
+            android:text="@string/category_field" />
+
+        <TextView
+            android:id="@+id/location_section"
+            style="@style/SectionNameStyle"
+            android:text="@string/location_field" />
+
+        <TextView
+            android:id="@+id/mood_section"
+            style="@style/SectionNameStyle"
+            android:text="@string/mood_field" />
+
+        <TextView
+            android:id="@+id/description_section"
+            style="@style/SectionNameStyle"
+            android:text="@string/description_field" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/more_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_more"
+            android:background="@null"
+            android:contentDescription="@string/more_options" />
+
+        </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D2691E</color>
+    <color name="colorPrimaryDark">#8B4513</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="rosyBrown">#BC8F8F</color>
+    <color name="colorWhite">#fff</color>
+    <color name="colorBlack">#000</color>
+    <color name="lavenderBlush">#FFF0F5</color>
+    <color name="oldLace">#FDF5E6</color>
+    <color name="papayaWhip">#FFEFD5</color>
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="imageClicked"
+            type="android.view.View.OnClickListener" />
+
+        <variable
+            name="saveClicked"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lavenderBlush"
+        tools:context=".AddCardActivity">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/section_imageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:onClick="@{imageClicked}"
+            android:src="@drawable/ic_dark_camera"
+            app:civ_border_color="@color/rosyBrown"
+            app:civ_border_width="2dp" />
+
+        <EditText
+            android:id="@+id/title_editText"
+            style="@style/EditTextStyle"
+            android:layout_below="@id/section_imageView"
+            android:hint="@string/title_textView"
+            android:importantForAutofill="no"
+            android:inputType="text|textCapWords" />
+
+        <Spinner
+            android:id="@+id/category_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_editText"
+            android:layout_margin="8dp"
+            android:spinnerMode="dropdown" />
+
+        <EditText
+            android:id="@+id/location_editText"
+            style="@style/EditTextStyle"
+            android:layout_below="@id/category_spinner"
+            android:hint="@string/location_editText"
+            android:importantForAutofill="no"
+            android:inputType="text|textCapWords" />
+
+        <Spinner
+            android:id="@+id/mood_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location_editText"
+            android:layout_margin="8dp"
+            android:prompt="@string/mood_prompt"
+            android:spinnerMode="dialog" />
+
+        <EditText
+            android:id="@+id/description_editText"
+            style="@style/EditTextStyle"
+            android:layout_below="@id/mood_spinner"
+            android:gravity="start"
+            android:hint="@string/description_editText"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            android:minHeight="100dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="12dp"
+            android:onClick="@{saveClicked}"
+            android:src="@drawable/ic_done" />
+    </RelativeLayout>
+</layout>

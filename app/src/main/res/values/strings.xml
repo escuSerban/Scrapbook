@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Scrapbook</string>
+    <string name="fab_text">Card</string>
+    <string name="fab_description">Add record</string>
+    <string name="title_textView">Title</string>
+    <string name="location_editText">Location</string>
+    <string name="date_editText">Date</string>
+    <string name="description_editText">Description</string>
+    <string name="mood_prompt">How are you feeling?</string>
+    <string name="adding_entry">"Add a Library Card"</string>
+    <string name="title_field">Content title</string>
+    <string name="category_field">Category</string>
+    <string name="location_field">Specific location</string>
+    <string name="mood_field">Mood</string>
+    <string name="description_field">Description</string>
+    <string name="more_options">Options</string>
+    <string name="search_title">Search</string>
+    <string name="selected_category">Selected category</string>
+    <string name="mood_content">In the mood</string>
+    <string name="date_created">Created on</string>
+    <string name="added_date">Date added</string>
+    <string name="date_updated">Updated</string>
+    <string name="modified_date">Modified on…</string>
+    <string name="card_details">"Card details"</string>
+    <string name="update_option">Update record</string>
+    <string name="record_updated">Record updated</string>
+
+    <string-array name="Categories">
+        <item>Event</item>
+        <item>Parade</item>
+        <item>Routine</item>
+        <item>Hobby</item>
+        <item>Birthday</item>
+        <item>Wedding</item>
+    </string-array>
+
+    <string-array name="Moods">
+        <item>Mood</item>
+        <item>Happy 😁</item>
+        <item>Astonished 😲</item>
+        <item>Anxious 😰</item>
+        <item>Confused 😕</item>
+        <item>Dizzy 😵</item>
+        <item>Relieved 😌</item>
+    </string-array>
+</resources>
